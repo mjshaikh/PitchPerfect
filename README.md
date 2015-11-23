@@ -6,6 +6,6 @@ This app demonstrates skills learnt in "Intro to iOS App Development with Swift"
 - The app implements Model-View-Controller pattern.
 - App works on iPhone and iPad in both portrait and landscape orientation.
 
-References:
+# References
 The reverb and echo effects have been inspired by the following StackOverFlow page:
 http://stackoverflow.com/questions/29619087/what-does-detachnode-do-in-avaudioengine-class-in-swift

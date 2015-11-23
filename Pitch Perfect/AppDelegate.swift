@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Pitch Perfect
 //
-//  Created by Dev on 2015-11-17.
+//  Created by Mohammed Shaikh on 2015-11-17.
 //  Copyright © 2015 Zaytun Lab. All rights reserved.
 //
 

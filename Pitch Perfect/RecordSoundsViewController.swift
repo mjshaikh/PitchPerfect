@@ -110,7 +110,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
                 change toggleImageButton to pause state */
             resetUI(recordingText, buttonImage: pauseImage)
         }
-        
     }
     
     
@@ -131,7 +130,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             // Something went wrong so change the visiblity and UI back to default
             changeVisibility(true, stopButtonFlag: true, toggleButtonFlag: true)
             resetUI(tapToRecordText, buttonImage: nil)
-            
         }
     }
     

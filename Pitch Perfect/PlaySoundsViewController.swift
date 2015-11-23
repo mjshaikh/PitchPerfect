@@ -34,7 +34,6 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
         try! audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl)
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

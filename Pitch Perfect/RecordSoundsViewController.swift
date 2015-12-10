@@ -125,9 +125,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }
         else{
-            // Something went wrong so change the visiblity and UI back to default
+            // Something went wrong so change the visiblity and UI back to default and giver alert msg to user
             changeVisibility(true, stopButtonFlag: true, toggleButtonFlag: true)
             resetUI(tapToRecordText, buttonImage: nil)
+            
+            let alertView = UIAlertController(title: "Oops", message: "There was an error recording your sound. Please try again", preferredStyle: .Alert)
+            alertView.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(alertView, animated: true, completion: nil)
         }
     }
     

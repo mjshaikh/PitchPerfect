@@ -10,7 +10,7 @@ import Foundation
 
 /* Our model class to hold the recorded audio data */
 
-class RecordedAudio: NSObject{
+class RecordedAudio {
     var filePathUrl: NSURL!
     var title: String!
     

@@ -34,18 +34,17 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
         try! audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         // hide the stop button when the view is first loaded
         changeStopButtonVisiblity(false)
     }
     
     override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
         /* We reset the audio when the view is about to disappear due to a bug
             where the audio continues playing in background even after leaving PlaySoundsVC
             in case of AudioEngine */

@@ -42,13 +42,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         pauseImage = UIImage(named: "pause_button")
         resumeImage = UIImage(named: "resume_button")
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         // reset label text to "Tap to Record" and change toggleButton image back to paused state
         resetUI(tapToRecordText, buttonImage: pauseImage)
         
@@ -124,7 +122,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             // we call our initializer in RecordedAudio class to initialize our object
             recordedAudio = RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent!)
             
-            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+            performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }
         else{
             // Something went wrong so change the visiblity and UI back to default
